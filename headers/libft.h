@@ -6,9 +6,11 @@
 /*   By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/05 16:34:51 by ysakakib          #+#    #+#             */
-/*   Updated: 2017/06/05 16:48:15 by ysakakib         ###   ########.fr       */
+/*   Updated: 2017/06/06 01:02:04 by ysakakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 // Mandatory parts
 
@@ -19,7 +21,7 @@
 // ft_memmove
 // ft_memchr
 // ft_memcmp
-int ft_strlen(char *);
+size_t ft_strlen(const char *s);
 // ft_strdup
 // ft_strcpy
 // ft_strncpy

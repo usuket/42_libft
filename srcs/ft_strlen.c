@@ -6,11 +6,18 @@
 /*   By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/05 16:52:35 by ysakakib          #+#    #+#             */
-/*   Updated: 2017/06/05 17:14:32 by ysakakib         ###   ########.fr       */
+/*   Updated: 2017/06/06 00:49:44 by ysakakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char* str)
+#include <string.h>
+
+size_t ft_strlen(const char *str)
 {
-	return(5);
+	int length;
+
+	length = 0;
+		while (*str++ != '\0')
+			length++;
+	return (length);
 }
