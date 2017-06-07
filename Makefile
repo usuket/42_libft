@@ -32,8 +32,10 @@ clean:
 fclean:
 	$(DEL) *.o
 	$(DEL) a.out
+	$(DEL) libft.a
 re: fclean all
 test:
+	gcc $(FLAGS) -I $(HEADERS) srcs/ft_isalpha.c tests/test_ft_isalpha.c -o output/test_ft_isalpha.out
 	gcc $(FLAGS) -I $(HEADERS) srcs/ft_strlen.c tests/test_ft_strlen.c -o output/test_ft_strlen.out
 	gcc $(FLAGS) -I $(HEADERS) srcs/ft_toupper.c tests/test_ft_toupper.c -o output/test_ft_toupper.out
 	gcc $(FLAGS) -I $(HEADERS) srcs/ft_tolower.c tests/test_ft_tolower.c -o output/test_ft_tolower.out
