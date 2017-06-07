@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
+#include <string.h>
 
 // Mandatory parts
 
@@ -22,6 +22,7 @@
 // ft_memchr
 // ft_memcmp
 size_t ft_strlen(const char *s);
+
 // ft_strdup
 // ft_strcpy
 // ft_strncpy
@@ -41,4 +42,4 @@ size_t ft_strlen(const char *s);
 // ft_isascii
 // ft_isprint
 // ft_toupper
-// ft_tolower
+int ft_tolower(int c);
