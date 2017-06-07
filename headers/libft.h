@@ -41,5 +41,5 @@ size_t ft_strlen(const char *s);
 // ft_isalnum
 // ft_isascii
 // ft_isprint
-// ft_toupper
+int ft_toupper(int c);
 int ft_tolower(int c);
