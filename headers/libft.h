@@ -39,7 +39,7 @@ size_t ft_strlen(const char *s);
 int ft_isalpha(int c);
 // ft_isdigit
 // ft_isalnum
-// ft_isascii
+int ft_isascii(int c);
 // ft_isprint
 int ft_toupper(int c);
 int ft_tolower(int c);
