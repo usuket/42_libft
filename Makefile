@@ -32,4 +32,7 @@ fclean:
 	$(DEL) a.out
 re: fclean all
 test:
-	gcc $(FLAGS) $(SRCS) $(TESTS) -I $(HEADERS)
+	gcc $(FLAGS) -I $(HEADERS) srcs/ft_toupper.c tests/test_ft_toupper.c -o output/test_ft_toupper.out
+	gcc $(FLAGS) -I $(HEADERS) srcs/ft_tolower.c tests/test_ft_tolower.c -o output/test_ft_tolower.out
+clean_test:
+	rm -f output/*.out
