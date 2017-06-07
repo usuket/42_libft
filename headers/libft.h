@@ -37,7 +37,7 @@ size_t ft_strlen(const char *s);
 // ft_strncmp
 // ft_atoi
 int ft_isalpha(int c);
-// ft_isdigit
+int ft_isdigit(int c);
 // ft_isalnum
 int ft_isascii(int c);
 // ft_isprint

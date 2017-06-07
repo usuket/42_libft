@@ -35,6 +35,7 @@ fclean:
 	$(DEL) libft.a
 re: fclean all
 test:
+	gcc $(FLAGS) -I $(HEADERS) srcs/ft_isdigit.c tests/test_ft_isdigit.c -o output/test_ft_isdigit.out
 	gcc $(FLAGS) -I $(HEADERS) srcs/ft_isascii.c tests/test_ft_isascii.c -o output/test_ft_isascii.out
 	gcc $(FLAGS) -I $(HEADERS) srcs/ft_isalpha.c tests/test_ft_isalpha.c -o output/test_ft_isalpha.out
 	gcc $(FLAGS) -I $(HEADERS) srcs/ft_strlen.c tests/test_ft_strlen.c -o output/test_ft_strlen.out
