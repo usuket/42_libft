@@ -23,7 +23,7 @@
 // ft_memcmp
 size_t ft_strlen(const char *s);
 
-// ft_strdup
+char	*ft_strdup(const char *s1);
 // ft_strcpy
 // ft_strncpy
 // ft_strcat
