@@ -14,7 +14,8 @@
 
 // Mandatory parts
 
-// ft_memset
+void	*ft_memset(void *b, int c, size_t len);
+
 // ft_bzero
 // ft_memcpy
 // ft_memccpy
