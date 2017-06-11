@@ -36,6 +36,7 @@ fclean:
 re: fclean all
 test: $(NAME)
 	gcc libft.a -I headers srcs/ft_memset.c tests/test_ft_memset.c -o output/test_ft_memset.out
+	gcc libft.a -I headers srcs/ft_bzero.c tests/test_ft_bzero.c -o output/test_ft_bzero.out
 	gcc libft.a -I headers srcs/ft_strdup.c tests/test_ft_strdup.c -o output/test_ft_strdup.out
 	gcc libft.a -I headers srcs/ft_atoi.c tests/test_ft_atoi.c -o output/test_ft_atoi.out
 	gcc libft.a -I headers srcs/ft_isalnum.c tests/test_ft_isalnum.c -o output/test_ft_isalnum.out

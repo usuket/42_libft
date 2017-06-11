@@ -16,7 +16,7 @@
 
 void	*ft_memset(void *b, int c, size_t len);
 
-// ft_bzero
+void	ft_bzero(void *s, size_t n);
 // ft_memcpy
 // ft_memccpy
 // ft_memmove
