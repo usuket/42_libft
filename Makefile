@@ -19,19 +19,16 @@ TESTS=tests/*.c
 DEL = rm -f
 FLAGS=-Wall -Wextra -Werror -std=c99
 
+all: $(NAME)
 $(NAME):
 	echo $(NAME)
 	gcc -c $(FLAGS) $(SRCS) -I $(HEADERS)
 	ar rc $(NAME) *.o
 	ranlib libft.a
-all:
-	ls -la $(SRCS)
 clean:
 	$(DEL) *.o
 	$(DEL) a.out
-fclean:
-	$(DEL) *.o
-	$(DEL) a.out
+fclean: clean
 	$(DEL) libft.a
 re: fclean all
 test: $(NAME)
