@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/11 10:40:17 by ysakakib          #+#    #+#             */
-/*   Updated: 2017/06/11 10:40:18 by ysakakib         ###   ########.fr       */
+/*   Created: 2017/01/16 12:11:59 by ysakakib          #+#    #+#             */
+/*   Updated: 2017/06/12 17:26:37 by ysakakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+void	ft_putstr(char *str)
 {
-	int			i;
-	char		*de;
-	const char	*sr;
+	int	i;
 
 	i = 0;
-	de = (char *)dst;
-	sr = (char *)src;
-	while (i < (int)n)
+	while (str[i] != '\0')
 	{
-		de[i] = sr[i];
+		ft_putchar(str[i]);
 		i++;
-		if (i < (int)n && sr[i] == c)
-		{
-			de[i] = sr[i];
-			break ;
-		}
 	}
-	return (dst);
 }
