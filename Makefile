@@ -52,6 +52,7 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_tolower.c tests/test_ft_tolower.c -o output/test_ft_tolower.out
 	echo "additional"
 	gcc libft.a -I headers srcs/ft_memalloc.c tests/test_ft_memalloc.c -o output/test_ft_memalloc.out
+	gcc libft.a -I headers srcs/ft_memdel.c tests/test_ft_memdel.c -o output/test_ft_memdel.out
 	gcc libft.a -I headers srcs/ft_itoa.c tests/test_ft_itoa.c -o output/test_ft_itoa.out
 	gcc libft.a -I headers srcs/ft_putchar.c tests/test_ft_putchar.c -o output/test_ft_putchar.out
 	gcc libft.a -I headers srcs/ft_putnbr.c tests/test_ft_putnbr.c -o output/test_ft_putnbr.out
