@@ -31,7 +31,8 @@ clean:
 fclean: clean
 	$(DEL) libft.a
 re: fclean all
-test: $(NAME)
+test: fclean all
+	echo "mandatory"
 	gcc libft.a -I headers srcs/ft_memset.c tests/test_ft_memset.c -o output/test_ft_memset.out
 	gcc libft.a -I headers srcs/ft_bzero.c tests/test_ft_bzero.c -o output/test_ft_bzero.out
 	gcc libft.a -I headers srcs/ft_memcpy.c tests/test_ft_memcpy.c -o output/test_ft_memcpy.out
@@ -49,5 +50,11 @@ test: $(NAME)
 	gcc libft.a -I headers srcs/ft_strlen.c tests/test_ft_strlen.c -o output/test_ft_strlen.out
 	gcc libft.a -I headers srcs/ft_toupper.c tests/test_ft_toupper.c -o output/test_ft_toupper.out
 	gcc libft.a -I headers srcs/ft_tolower.c tests/test_ft_tolower.c -o output/test_ft_tolower.out
+	echo "additional"
+	gcc libft.a -I headers srcs/ft_itoa.c tests/test_ft_itoa.c -o output/test_ft_itoa.out
+	gcc libft.a -I headers srcs/ft_putchar.c tests/test_ft_putchar.c -o output/test_ft_putchar.out
+	gcc libft.a -I headers srcs/ft_putnbr.c tests/test_ft_putnbr.c -o output/test_ft_putnbr.out
+	gcc libft.a -I headers srcs/ft_putstr.c tests/test_ft_putstr.c -o output/test_ft_putstr.out
+	gcc libft.a -I headers srcs/ft_strdup.c tests/test_ft_strdup.c -o output/test_ft_strdup.out
 clean_test:
 	rm -f output/*.out
