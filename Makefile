@@ -17,19 +17,17 @@ HEADERS=headers/
 TESTS=tests/*.c
 
 DEL = rm -f
-FLAGS=-Wall -Wextra -Werror -std=c99
-
+#FLAGS=-Wall -Wextra -Werror -std=c99
+FLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 $(NAME):
-	echo $(NAME)
 	gcc -c $(FLAGS) $(SRCS) -I $(HEADERS)
-	ar rc $(NAME) *.o
-	ranlib libft.a
+	ar rcs $(NAME) *.o
+	ranlib $(NAME)
 clean:
 	$(DEL) *.o
-	$(DEL) a.out
 fclean: clean
-	$(DEL) libft.a
+	$(DEL) $(NAME)
 re: fclean all
 test: fclean all
 	echo "mandatory"
@@ -54,6 +52,7 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_memalloc.c tests/test_ft_memalloc.c -o output/test_ft_memalloc.out
 	gcc libft.a -I headers srcs/ft_memdel.c tests/test_ft_memdel.c -o output/test_ft_memdel.out
 	gcc libft.a -I headers srcs/ft_strnew.c tests/test_ft_strnew.c -o output/test_ft_strnew.out
+	gcc libft.a -I headers srcs/ft_strdel.c tests/test_ft_strdel.c -o output/test_ft_strdel.out
 	gcc libft.a -I headers srcs/ft_itoa.c tests/test_ft_itoa.c -o output/test_ft_itoa.out
 	gcc libft.a -I headers srcs/ft_putchar.c tests/test_ft_putchar.c -o output/test_ft_putchar.out
 	gcc libft.a -I headers srcs/ft_putnbr.c tests/test_ft_putnbr.c -o output/test_ft_putnbr.out
@@ -61,3 +60,4 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_strdup.c tests/test_ft_strdup.c -o output/test_ft_strdup.out
 clean_test:
 	rm -f output/*.out
+
