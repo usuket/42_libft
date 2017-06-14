@@ -29,6 +29,8 @@ clean:
 fclean: clean
 	$(DEL) $(NAME)
 re: fclean all
+test_clean:
+	rm -f output/*.out
 test: fclean all
 	echo "mandatory"
 	gcc libft.a -I headers srcs/ft_memset.c tests/test_ft_memset.c -o output/test_ft_memset.out
@@ -53,11 +55,11 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_memdel.c tests/test_ft_memdel.c -o output/test_ft_memdel.out
 	gcc libft.a -I headers srcs/ft_strnew.c tests/test_ft_strnew.c -o output/test_ft_strnew.out
 	gcc libft.a -I headers srcs/ft_strdel.c tests/test_ft_strdel.c -o output/test_ft_strdel.out
+	gcc libft.a -I headers srcs/ft_strclr.c tests/test_ft_strclr.c -o output/test_ft_strclr.out
 	gcc libft.a -I headers srcs/ft_itoa.c tests/test_ft_itoa.c -o output/test_ft_itoa.out
 	gcc libft.a -I headers srcs/ft_putchar.c tests/test_ft_putchar.c -o output/test_ft_putchar.out
 	gcc libft.a -I headers srcs/ft_putnbr.c tests/test_ft_putnbr.c -o output/test_ft_putnbr.out
 	gcc libft.a -I headers srcs/ft_putstr.c tests/test_ft_putstr.c -o output/test_ft_putstr.out
 	gcc libft.a -I headers srcs/ft_strdup.c tests/test_ft_strdup.c -o output/test_ft_strdup.out
-clean_test:
-	rm -f output/*.out
+
 
