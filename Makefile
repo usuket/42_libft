@@ -57,6 +57,7 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_striter.c tests/test_ft_striter.c -o output/test_ft_striter.out
 	gcc libft.a -I headers srcs/ft_striteri.c tests/test_ft_striteri.c -o output/test_ft_striteri.out
 	gcc libft.a -I headers srcs/ft_strmap.c tests/test_ft_strmap.c -o output/test_ft_strmap.out
+	gcc libft.a -I headers srcs/ft_strmapi.c tests/test_ft_strmapi.c -o output/test_ft_strmapi.out
 	gcc libft.a -I headers srcs/ft_itoa.c tests/test_ft_itoa.c -o output/test_ft_itoa.out
 	gcc libft.a -I headers srcs/ft_putchar.c tests/test_ft_putchar.c -o output/test_ft_putchar.out
 	gcc libft.a -I headers srcs/ft_putnbr.c tests/test_ft_putnbr.c -o output/test_ft_putnbr.out
