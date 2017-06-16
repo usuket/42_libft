@@ -9,8 +9,8 @@
 
 static char odd_upper(unsigned int idx, char *c) {
 	if (idx % 2 == 0)
-		return ft_toupper(c);
-	return (c);
+		return (char) ft_toupper((int) c);
+	return ((char) c);
 }
 
 int main() {
