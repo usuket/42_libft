@@ -55,7 +55,7 @@ int main()
 	printf("%i:%i\t%s:%s\n", 0, -10, str1, sub);
 
 	printf("## return null ##\n");
-	sub = ft_strsub(str1, 0, SIZE_MAX);
+	sub = ft_strsub(str1, 0, SIZE_MAX -1);
 	printf("%i:%llu\t%s:%s\t expect NULL\n", 0, SIZE_MAX, str1, sub);
 
 	return (0);
