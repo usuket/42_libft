@@ -63,6 +63,7 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_strsub.c tests/test_ft_strsub.c -o output/test_ft_strsub.out
 	gcc libft.a -I headers srcs/ft_strjoin.c tests/test_ft_strjoin.c -o output/test_ft_strjoin.out
 	gcc libft.a -I headers srcs/ft_strtrim.c tests/test_ft_strtrim.c -o output/test_ft_strtrim.out
+	gcc libft.a -I headers srcs/ft_strsplit.c tests/test_ft_strsplit.c -o output/test_ft_strsplit.out
 	gcc libft.a -I headers srcs/ft_itoa.c tests/test_ft_itoa.c -o output/test_ft_itoa.out
 	gcc libft.a -I headers srcs/ft_putchar.c tests/test_ft_putchar.c -o output/test_ft_putchar.out
 	gcc libft.a -I headers srcs/ft_putnbr.c tests/test_ft_putnbr.c -o output/test_ft_putnbr.out
@@ -70,4 +71,3 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_strdup.c tests/test_ft_strdup.c -o output/test_ft_strdup.out
 test_clean:
 	rm -f output/*.out
-
