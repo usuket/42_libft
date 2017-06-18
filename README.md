@@ -1,6 +1,6 @@
 # 42_libft
 
-##　Helper Scripts
+## Helper Scripts
 * add.sh {file_name}
 * test.sh
 ```sh
