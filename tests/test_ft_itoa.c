@@ -25,7 +25,7 @@ int main() {
 	printf("%i:%s;\n", i, TARGET(i));
 
 	// integer overflow
-	i = 2147483648;
+	i = (int)2147483648;
 	printf("%i:%s;\n", i, TARGET(i));
 
 	return (0);
