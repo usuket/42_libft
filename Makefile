@@ -68,6 +68,7 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_putchar.c tests/test_ft_putchar.c -o output/test_ft_putchar.out
 	gcc libft.a -I headers srcs/ft_putnbr.c tests/test_ft_putnbr.c -o output/test_ft_putnbr.out
 	gcc libft.a -I headers srcs/ft_putstr.c tests/test_ft_putstr.c -o output/test_ft_putstr.out
+	gcc libft.a -I headers srcs/ft_putendl.c tests/test_ft_putendl.c -o output/test_ft_putendl.out
 	gcc libft.a -I headers srcs/ft_strdup.c tests/test_ft_strdup.c -o output/test_ft_strdup.out
 test_clean:
 	rm -f output/*.out
