@@ -12,32 +12,6 @@
 
 #include "libft.h"
 
-static int		is_white_space(char c);
-static int		calc_front_trim_size(const char *s, const int len);
-static int		calc_end_trim_size(const char *s, const int len);
-
-char			*ft_strtrim(char const *s)
-{
-	size_t		len;
-	int			i;
-	char		*str;
-	int			front;
-	int			end;
-
-	len = ft_strlen(s);
-	front = calc_front_trim_size(s, len);
-	end = calc_end_trim_size(s, len);
-	str = (char *)ft_memalloc(len - (front + end) + 1);
-	i = 0;
-	while ((unsigned int)i < len - (front + end))
-	{
-		str[i] = s[front + i];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
-}
-
 static int		is_white_space(char c)
 {
 	if (c == ' ' || c == '\n' || c == '\t')
@@ -73,4 +47,26 @@ static int		calc_end_trim_size(const char *s, const int len)
 			break ;
 	}
 	return (i);
+}
+
+char			*ft_strtrim(char const *s)
+{
+	size_t		len;
+	int			i;
+	char		*str;
+	int			front;
+	int			end;
+
+	len = ft_strlen(s);
+	front = calc_front_trim_size(s, len);
+	end = calc_end_trim_size(s, len);
+	str = (char *)ft_memalloc(len - (front + end) + 1);
+	i = 0;
+	while ((unsigned int)i < len - (front + end))
+	{
+		str[i] = s[front + i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }
