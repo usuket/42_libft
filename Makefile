@@ -71,6 +71,7 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_putendl.c tests/test_ft_putendl.c -o output/test_ft_putendl.out
 	gcc libft.a -I headers srcs/ft_putchar_fd.c tests/test_ft_putchar_fd.c -o output/test_ft_putchar_fd.out
 	gcc libft.a -I headers srcs/ft_putstr_fd.c tests/test_ft_putstr_fd.c -o output/test_ft_putstr_fd.out
+	gcc libft.a -I headers srcs/ft_putendl_fd.c tests/test_ft_putendl_fd.c -o output/test_ft_putendl_fd.out
 	gcc libft.a -I headers srcs/ft_strdup.c tests/test_ft_strdup.c -o output/test_ft_strdup.out
 test_clean:
 	rm -f output/*.out
