@@ -11,7 +11,7 @@ int main() {
 	int fd;
 	int fd1;
 
-	char *path = "output/test_ft_putchar_fd.log";
+	char *path = "log/test_ft_putchar_fd.log";
 	fd = open(path, O_CREAT | O_WRONLY, S_IRUSR | S_IWUSR);
 	ft_putchar_fd('x', fd);
 	close(fd);

@@ -12,7 +12,7 @@ int main() {
 	int fd1;
 
 	char *test_str = "test\n012345";
-	char *path = "output/test_ft_putendl_fd.log";
+	char *path = "log/test_ft_putendl_fd.log";
 	fd = open(path, O_CREAT | O_WRONLY, S_IRUSR | S_IWUSR);
 	ft_putendl_fd(test_str, fd);
 	close(fd);
