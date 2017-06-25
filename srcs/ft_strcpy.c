@@ -6,20 +6,22 @@
 /*   By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 23:04:12 by ysakakib          #+#    #+#             */
-/*   Updated: 2017/01/29 23:04:30 by ysakakib         ###   ########.fr       */
+/*   Updated: 2017/06/25 16:26:30 by ysakakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
-{
-	int i;
+#include <string.h>
 
-	i = 0;
-	while (src[i])
+char	*ft_strcpy(char *s1, char *s2)
+{
+	size_t	cur;
+
+	cur = 0;
+	while (s2[cur] != '\0')
 	{
-		dest[i] = src[i];
-		i++;
+		s1[cur] = s2[cur];
+		cur++;
 	}
-	dest[i + 1] = src[i];
-	return (dest);
+	s1[cur] = '\0';
+	return (s1);
 }
