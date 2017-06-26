@@ -26,8 +26,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t ft_strlen(const char *s);
 char	*ft_strdup(const char *s1);
 char	*ft_strcpy(char *dst, const char *src);
-
-// ft_strncpy
+char	*ft_strncpy(char *dest, char *src, unsigned int n);
 // ft_strcat
 // ft_strncat
 // ft_strlcat
