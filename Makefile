@@ -44,6 +44,7 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_strcat.c tests/test_ft_strcat.c -o output/test_ft_strcat.out
 	gcc libft.a -I headers srcs/ft_strncat.c tests/test_ft_strncat.c -o output/test_ft_strncat.out
 	gcc libft.a -I headers srcs/ft_strlcat.c tests/test_ft_strlcat.c -o output/test_ft_strlcat.out
+	gcc libft.a -I headers srcs/ft_strchr.c tests/test_ft_strchr.c -o output/test_ft_strchr.out
 	gcc libft.a -I headers srcs/ft_atoi.c tests/test_ft_atoi.c -o output/test_ft_atoi.out
 	gcc libft.a -I headers srcs/ft_isalnum.c tests/test_ft_isalnum.c -o output/test_ft_isalnum.out
 	gcc libft.a -I headers srcs/ft_isprint.c tests/test_ft_isprint.c -o output/test_ft_isprint.out
@@ -81,3 +82,4 @@ test: fclean all
 	gcc libft.a -I headers srcs/ft_strdup.c tests/test_ft_strdup.c -o output/test_ft_strdup.out
 test_clean:
 	rm -f output/*.out
+
