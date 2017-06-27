@@ -14,14 +14,14 @@
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
+	size_t	i;
 
 	i = 0;
-	while (src != '\0' && (i < n))
+	ft_memset(dest, '\0', n);
+	while (i < (size_t) n && src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
 	return (dest);
 }
