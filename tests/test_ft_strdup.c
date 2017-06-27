@@ -8,7 +8,7 @@
 #define TARGET ft_strdup
 #define EXPECTED strdup
 
-int main() {
+static int main() {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 

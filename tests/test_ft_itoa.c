@@ -6,7 +6,7 @@
 #define FUNCTION_NAME "ft_itoa"
 #define TARGET ft_itoa
 
-int main() {
+static int main() {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 	printf("#INDEX: EXPECTED : TARGET#\n");

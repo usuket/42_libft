@@ -7,7 +7,7 @@
 #define TARGET ft_isalpha
 #define EXPECTED isalpha
 
-int main() {
+static int main() {
 	printf("##########################\n");
 	printf("%i:%i\n", TARGET('a') ,EXPECTED('a'));
 	printf("%i:%i\n", TARGET('z') ,EXPECTED('z'));

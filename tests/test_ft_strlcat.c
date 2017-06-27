@@ -7,7 +7,7 @@
 
 #define FUNCTION_NAME "ft_strlcat"
 
-int main() {
+static int main() {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 

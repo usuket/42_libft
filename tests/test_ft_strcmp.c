@@ -5,7 +5,7 @@
 
 #define FUNCTION_NAME "ft_strcmp"
 
-int main() {
+static int main() {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 

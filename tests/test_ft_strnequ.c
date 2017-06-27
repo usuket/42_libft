@@ -7,7 +7,7 @@
 
 #define FUNCTION_NAME "ft_strnequ"
 
-int main() {
+static int main() {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 
 	char	*str1 = malloc(sizeof(char) * 11);

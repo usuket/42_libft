@@ -7,11 +7,11 @@
 
 #define FUNCTION_NAME "ft_striter"
 
-void print(char *c) {
+static void print(char *c) {
 	write(1, c, 1);
 }
 
-int main() {
+static int main() {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 

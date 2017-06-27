@@ -2,9 +2,9 @@
 #include <string.h>
 #include <stdlib.h>
 
-int	ft_atoi(const char *str);
+#include "libft.h"
 
-int     main(void)
+static int     main(void)
 {
 	char *inputs[17] = {
 			"-2147483647", "2147483647",

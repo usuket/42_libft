@@ -5,7 +5,7 @@
 
 #define FUNCTION_NAME "ft_memdel"
 
-int main() {
+static int main() {
 	// TODO add test.
 	printf("TODO should be create a ft_memdel test");
 	return (0);

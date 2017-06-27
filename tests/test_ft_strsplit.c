@@ -17,7 +17,7 @@ static void print_list(char **list)
     }
 }
 
-int main()
+static int main()
 {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("#######################\n");

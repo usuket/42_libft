@@ -7,7 +7,7 @@
 #define TARGET ft_memcpy
 #define EXPECTED memcpy
 
-int main() {
+static int main() {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 	printf("#INDEX: EXPECTED : TARGET#\n");

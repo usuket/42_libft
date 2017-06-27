@@ -3,7 +3,7 @@
 
 #include "libft.h"
 
-int main() {
+static int main() {
 	printf("##########################\n");
 	printf("%c\n", ft_tolower('A'));
 	printf("%c\n", ft_tolower('Z'));

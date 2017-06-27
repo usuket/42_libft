@@ -7,7 +7,7 @@
 #define TARGET ft_isdigit
 #define EXPECTED isdigit
 
-int main() {
+static int main() {
 	printf("##########################\n");
 	for (int i = -10; i < 130; ++i) {
 		printf("%i\t%i:%i\n", i, TARGET(i), EXPECTED(i));

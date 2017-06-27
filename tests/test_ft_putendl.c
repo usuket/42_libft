@@ -7,7 +7,7 @@
 
 #define FUNCTION_NAME "ft_putendl"
 
-int main()
+static int main()
 {
 	ft_putendl("abd");
 	ft_putendl("def");
