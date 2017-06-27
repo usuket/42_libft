@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	itoa_isnegative(int *n, int *negative)
+static void	itoa_isnegative(int *n, int *negative)
 {
 	if (*n < 0)
 	{
