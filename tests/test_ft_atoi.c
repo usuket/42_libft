@@ -14,6 +14,9 @@ static int     main(void)
 			"abc123def", "123abc456",
 			"01234", "+1", "+abc", "-abc", "- 15",
 			"-0152"
+			"\t-0152",
+			"\n-0152",
+			" -0152"
 	};
 	int i = 0;
 	printf("TESTS:\n");
