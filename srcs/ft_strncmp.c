@@ -10,19 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+#include "libft.h"
+
+int		ft_strncmp(char const *str1, char const *str2, size_t nb)
 {
-	unsigned int	i;
+	size_t i;
 
 	i = 0;
-	while (i < n)
+	while (i < nb)
 	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		if (*s1 == '\0' && *s2 == '\0')
+		if ((unsigned char)str1[i] != (unsigned char)str2[i])
+			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+		if ((unsigned char)str1[i] == '\0' && (unsigned char)str2[i] == '\0')
 			return (0);
-		s1++;
-		s2++;
 		i++;
 	}
 	return (0);

@@ -10,12 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(const char *s1,const char *s2)
+int		ft_strcmp(char const *str1, char const *str2)
 {
-	while ((*s1 != '\0') && (*s1 == *s2))
+	int i;
+
+	i = 0;
+	while (str1[i] != '\0' || str2[i] != '\0')
 	{
-		s1++;
-		s2++;
+		if (str1[i] != str2[i])
+			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+		i++;
 	}
-	return (int)*s1 - (int)*s2;
+	return (0);
 }
