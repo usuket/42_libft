@@ -62,6 +62,8 @@ char			*ft_strtrim(char const *s)
 	end = calc_end_trim_size(s, len);
 	str = (char *)ft_memalloc(len - (front + end) + 1);
 	i = 0;
+	if (len - front <= 0)
+		return (ft_strdup(""));
 	while ((unsigned int)i < len - (front + end))
 	{
 		str[i] = s[front + i];
