@@ -49,6 +49,16 @@ static int		calc_end_trim_size(const char *s, const int len)
 	return (i);
 }
 
+static int		calc_mem_size(const int len, const int front, const int end)
+{
+	int mem_size;
+
+	mem_size = len - (front + end) + 1;
+	if(mem_size > 0)
+		return mem_size;
+	return 0;
+}
+
 char			*ft_strtrim(char const *s)
 {
 	size_t		len;
@@ -60,7 +70,9 @@ char			*ft_strtrim(char const *s)
 	len = ft_strlen(s);
 	front = calc_front_trim_size(s, len);
 	end = calc_end_trim_size(s, len);
-	str = (char *)ft_memalloc(len - (front + end) + 1);
+	str = (char *)ft_memalloc(calc_mem_size(len,front,end));
+	if (str == NULL)
+		return (NULL);
 	i = 0;
 	if (len - front <= 0)
 		return (ft_strdup(""));
