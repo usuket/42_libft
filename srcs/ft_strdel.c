@@ -6,7 +6,7 @@
 /*   By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/13 16:19:28 by ysakakib          #+#    #+#             */
-/*   Updated: 2017/06/13 16:19:30 by ysakakib         ###   ########.fr       */
+/*   Updated: 2017/07/02 02:28:30 by ysakakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 void	ft_strdel(char **as)
 {
-	ft_memdel((void **)as);
+	if (as && *as)
+	{
+		free(*as);
+		*as = NULL;
+	}
 }
