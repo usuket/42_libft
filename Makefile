@@ -89,6 +89,6 @@ test: fclean all
 	gcc libft.a -I $(HEADERS) srcs/ft_lstadd.c tests/test_ft_lstadd.c -o output/test_ft_lstadd.out
 	gcc libft.a -I $(HEADERS) srcs/ft_lstmap.c tests/test_ft_lstmap.c -o output/test_ft_lstmap.out
 test_clean:
-	rm -f output/*.out
+	rm output/*.out
 
 
