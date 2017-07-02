@@ -8,7 +8,7 @@
 #define TARGET ft_strdup
 #define EXPECTED strdup
 
-static int main() {
+int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 
@@ -18,5 +18,11 @@ static int main() {
 	str1 = "remove\0";
 
 	printf("%i\t%s:%s\n", 1, str1, str2);
+
+	// should clash
+	str2 = ft_strdup(((void *)0));
+	str1 = "remove\0";
+	printf("%i\t%s:%s\n", 1, str1, str2);
+
 	return (0);
 }

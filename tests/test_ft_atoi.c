@@ -4,7 +4,7 @@
 
 #include "libft.h"
 
-static int     main(void)
+int	main(void)
 {
 	char *inputs[17] = {
 			"-2147483647", "2147483647",
@@ -13,7 +13,7 @@ static int     main(void)
 			"0", "123hello", "hello123",
 			"abc123def", "123abc456",
 			"01234", "+1", "+abc", "-abc", "- 15",
-			"-0152"
+			"-0152",
 			"\t-0152",
 			"\n-0152",
 			" -0152"

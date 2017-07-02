@@ -7,7 +7,7 @@
 #define TARGET ft_isascii
 #define EXPECTED isascii
 
-static int main() {
+int main(void) {
 	printf("##########################\n");
 	for (int i = -10; i < 130; ++i) {
 		printf("%i\t%i:%i\n", i, TARGET(i), EXPECTED(i));

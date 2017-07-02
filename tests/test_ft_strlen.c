@@ -3,7 +3,7 @@
 
 #include "libft.h"
 
-static int main() {
+int main(void) {
 	const int max = 10;
 	char c = 'X';
 

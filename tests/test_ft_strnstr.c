@@ -8,7 +8,7 @@
 #define FUNCTION_NAME "ft_strnstr"
 
 // The strstr() function locates the first occurrence of the null-terminated string needle in the null-terminated string haystack.
-static int main() {
+int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 

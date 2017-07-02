@@ -5,7 +5,7 @@
 
 #define TARGET ft_toupper
 
-static int main() {
+int main(void) {
 	printf("##########################\n");
 	printf("%c\n", TARGET('a'));
 	printf("%c\n", TARGET('z'));

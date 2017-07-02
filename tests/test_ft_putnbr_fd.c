@@ -7,7 +7,7 @@
 
 #define FUNCTION_NAME "ft_putnbr_fd"
 
-static int main() {
+int main(void) {
 	int test_num_000 = -0;
 	char *path_000 = "log/test_ft_putnbr_fd_000.log";
 	int fd_000 = open(path_000, O_CREAT | O_WRONLY, S_IRUSR | S_IWUSR);

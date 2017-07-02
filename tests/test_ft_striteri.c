@@ -15,7 +15,7 @@ static void print(unsigned int idx,char *c) {
 	write(1, "\n", 1);
 }
 
-static int main() {
+int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 

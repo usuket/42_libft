@@ -7,7 +7,7 @@
 #define TARGET ft_memset
 #define EXPECTED memset
 
-static int main() {
+int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 

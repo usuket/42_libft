@@ -3,7 +3,7 @@
 
 #include "libft.h"
 
-static int main(void) {
+int main(void) {
 
 	char *dest_t1_1 = malloc(sizeof(char) * 10);
 	char *dest_t1_2 = malloc(sizeof(char) * 10);

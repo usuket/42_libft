@@ -6,7 +6,7 @@
 
 #define FUNCTION_NAME "ft_memalloc"
 
-static int main() {
+int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 

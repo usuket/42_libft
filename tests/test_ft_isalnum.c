@@ -7,7 +7,7 @@
 #define TARGET ft_isalnum
 #define EXPECTED isalnum
 
-static int main() {
+int main(void) {
 	printf("## TEST TARGET and EXPECTED ##\n");
 	printf("##########################\n");
 	for (int i = -10; i < 130; ++i) {

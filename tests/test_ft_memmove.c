@@ -7,7 +7,7 @@
 #define TARGET ft_memmove
 #define EXPECTED memmove
 
-static int main() {
+int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 	printf("#INDEX: EXPECTED : TARGET#\n");

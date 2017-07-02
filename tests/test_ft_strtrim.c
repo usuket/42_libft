@@ -7,7 +7,7 @@
 
 #define FUNCTION_NAME "ft_strtrim"
 
-static int main()
+int main(void)
 {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("#######################\n");

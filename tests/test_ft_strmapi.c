@@ -13,7 +13,7 @@ static char odd_upper(unsigned int idx, char *c) {
 	return ((char) c);
 }
 
-static int main() {
+int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 

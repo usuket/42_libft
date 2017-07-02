@@ -7,7 +7,7 @@
 #define TARGET ft_memchr
 #define EXPECTED memchr
 
-static int main() {
+int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 	printf("#INDEX: EXPECTED : TARGET#\n");

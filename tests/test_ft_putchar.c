@@ -7,7 +7,7 @@
 #define TARGET ft_putchar
 #define EXPECT putchar
 
-static int main() {
+int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 

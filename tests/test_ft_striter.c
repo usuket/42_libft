@@ -11,7 +11,7 @@ static void print(char *c) {
 	write(1, c, 1);
 }
 
-static int main() {
+int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 
