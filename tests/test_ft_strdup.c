@@ -19,10 +19,14 @@ int main(void) {
 
 	printf("%i\t%s:%s\n", 1, str1, str2);
 
-	// should clash
-	str2 = ft_strdup(((void *)0));
-	str1 = "remove\0";
-	printf("%i\t%s:%s\n", 1, str1, str2);
+	// Duplicate Null should raise SIGSEGV correctory.
+	//	str2 = ft_strdup(((void *)0));
+	//	str1 = "remove\0";
+	//	printf("%i\t%s:%s\n", 1, str1, str2);
+
+	//	str2 = strdup(((void *)0));
+	//	str1 = "remove\0";
+	//	printf("%i\t%s:%s\n", 1, str1, str2);
 
 	return (0);
 }
