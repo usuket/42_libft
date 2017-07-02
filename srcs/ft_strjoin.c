@@ -6,7 +6,7 @@
 /*   By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/15 19:45:16 by ysakakib          #+#    #+#             */
-/*   Updated: 2017/06/15 19:45:24 by ysakakib         ###   ########.fr       */
+/*   Updated: 2017/07/02 03:03:00 by ysakakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 	char	*str;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	str_len1 = ft_strlen(s1);
 	str_len2 = ft_strlen(s2);
 	str = ft_memalloc(str_len1 + str_len2 + 1);

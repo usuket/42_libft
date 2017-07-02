@@ -6,7 +6,7 @@
 /*   By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/15 20:16:07 by ysakakib          #+#    #+#             */
-/*   Updated: 2017/06/15 20:16:11 by ysakakib         ###   ########.fr       */
+/*   Updated: 2017/07/02 03:04:29 by ysakakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,8 @@ char			*ft_strtrim(char const *s)
 	int			front;
 	int			end;
 
+	if (s == NULL)
+		return (NULL);
 	len = ft_strlen(s);
 	front = calc_front_trim_size(s, len);
 	end = calc_end_trim_size(s, len);
