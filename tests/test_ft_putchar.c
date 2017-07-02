@@ -11,14 +11,20 @@ int main(void) {
 	printf("## TEST %s ##\n", FUNCTION_NAME);
 	printf("##########################\n");
 
-	for (int i = 0; i <= 127; ++i) {
-		TARGET(i);
-	}
-	TARGET('\n');
+//	for (int i = 0; i <= 127; ++i) {
+//		TARGET(i);
+//	}
+//	TARGET('\n');
+//
+//	for (int i = 0; i <= 127; ++i) {
+//		EXPECT(i);
+//	}
+//	EXPECT('\n');
 
-	for (int i = 0; i <= 127; ++i) {
-		EXPECT(i);
-	}
+	// TODO Unicode
+	TARGET(0xe2);
+	EXPECT(0xe2);
+
 	EXPECT('\n');
 
 	return (0);
