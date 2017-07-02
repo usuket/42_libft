@@ -15,7 +15,10 @@
 
 void	ft_lstdelone(t_list **link, void (*del)(void *, size_t))
 {
-	del(&((*link)->content), (*link)->content_size);
+	if (!link || !del)
+		return ;
+	del((*link)->content, (*link)->content_size);
 	free(*link);
 	*link = NULL;
+	return ;
 }
