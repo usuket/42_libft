@@ -20,6 +20,7 @@ int main(void) {
 	printf("%s\n", list2->content);
 	printf("%s\n", list3->content);
 
+	// Add child to node.
 	ft_lstadd(&list3, list2);
 	ft_lstadd(&list2, list1);
 	ft_lstadd(&list1, list0);
