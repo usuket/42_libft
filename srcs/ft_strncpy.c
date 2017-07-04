@@ -18,7 +18,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 
 	i = 0;
 	ft_memset(dest, '\0', n);
-	while (i < (size_t) n && src[i] != '\0')
+	while (i < (size_t)n && src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
