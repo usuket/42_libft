@@ -13,10 +13,10 @@
 #include "libft.h"
 
 /*
-** Try
+** TODO Try
 */
 
-char *ft_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	char	*cur1;
 	char	*cur2;

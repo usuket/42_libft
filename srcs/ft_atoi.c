@@ -12,15 +12,15 @@
 
 int	ft_atoi(const char *str)
 {
-	unsigned int	i;
-	long long	number;
-	int	negative_flag;
+	unsigned int		i;
+	long long			number;
+	int					negative_flag;
 
 	number = 0;
 	negative_flag = 1;
 	i = 0;
 	while ((str[i] == '\n') || (str[i] == '\t') || (str[i] == '\v') ||
-		   (str[i] == ' ') || (str[i] == '\f') || (str[i] == '\r'))
+			(str[i] == ' ') || (str[i] == '\f') || (str[i] == '\r'))
 		i++;
 	if (str[i] == '-')
 		negative_flag = -1;
