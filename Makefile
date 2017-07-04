@@ -18,11 +18,11 @@ TESTS = tests/*.c
 
 DEL = rm -f
 FLAGS = -Wall -Wextra -Werror
-all: $(NAME)
 $(NAME):
 	gcc -c $(FLAGS) $(SRCS) -I $(HEADERS)
 	ar rcs $(NAME) *.o
 	ranlib $(NAME)
+all: $(NAME)
 clean:
 	$(DEL) *.o
 fclean: clean
