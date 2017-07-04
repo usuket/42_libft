@@ -14,16 +14,12 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	str_len1;
-	size_t	str_len2;
 	int		i;
 	char	*str;
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	str_len1 = ft_strlen(s1);
-	str_len2 = ft_strlen(s2);
-	str = ft_memalloc(str_len1 + str_len2 + 1);
+	str = ft_memalloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (str == NULL)
 		return (NULL);
 	i = 0;
