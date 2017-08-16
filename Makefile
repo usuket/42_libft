@@ -12,14 +12,12 @@
 
 NAME=libft.a
 
-SRCS = srcs/*.c
-HEADERS = includes/
-TESTS = tests/*.c
+SRCS = *.c
 
 DEL = rm -f
 FLAGS = -Wall -Wextra -Werror
 $(NAME):
-	gcc -c $(FLAGS) $(SRCS) -I $(HEADERS)
+	gcc -c $(FLAGS) *.c libft.h
 	ar rcs $(NAME) *.o
 	ranlib $(NAME)
 all: $(NAME)
