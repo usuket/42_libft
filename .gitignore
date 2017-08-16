@@ -6,3 +6,4 @@
 *.a
 *.log
 cmake-build-debug/
+/libft.h.gch
