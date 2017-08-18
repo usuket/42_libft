@@ -13,6 +13,12 @@
 #include <stdlib.h>
 #include "libft.h"
 
+/*
+** split string s to array
+** input "aaa,bbb,ccc,ddd"
+** return array of those string "aaa" "bbb" "ccc" "ddd"
+*/
+
 char	**ft_wordtoary(const char *s, char c, int nb_word, int word_len)
 {
 	char	**array;
@@ -38,6 +44,6 @@ char	**ft_wordtoary(const char *s, char c, int nb_word, int word_len)
 			array[j++][k] = '\0';
 		}
 	}
-	array[j] = 0;
+	array[j] = NULL;
 	return (array);
 }
