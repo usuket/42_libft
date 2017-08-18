@@ -1,9 +1,0 @@
-.idea/
-._.DS_Store
-*.swp
-*.o
-*.out
-*.a
-*.log
-cmake-build-debug/
-/libft.h.gch
