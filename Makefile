@@ -6,7 +6,7 @@
 #    By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/05 18:18:09 by ysakakib          #+#    #+#              #
-#    Updated: 2017/08/18 14:09:34 by ysakakib         ###   ########.fr        #
+#    Updated: 2017/08/18 16:47:17 by ysakakib         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,7 @@ DEL = rm -f
 FLAGS = -Wall -Wextra -Werror
 
 $(NAME):
-	gcc -c $(FLAGS) -I libft.h $(SRCS)
+	gcc -c $(FLAGS) libft.h $(SRCS)
 	ar rcs $(NAME) *.o
 	ranlib $(NAME)
 all: $(NAME)
