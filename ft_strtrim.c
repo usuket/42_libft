@@ -11,54 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int		is_white_space(char c)
-{
-	if (c == ' ' || c == '\n' || c == '\t')
-		return (1);
-	return (0);
-}
-
-static int		calc_front_trim_size(const char *s, const int len)
-{
-	int i;
-
-	i = 0;
-	while (i < len)
-	{
-		if (is_white_space(s[i]))
-			i++;
-		else
-			break ;
-	}
-	return (i);
-}
-
-static int		calc_end_trim_size(const char *s, const int len)
-{
-	int i;
-
-	i = 0;
-	while (i < len)
-	{
-		if (is_white_space(s[len - i - 1]))
-			i++;
-		else
-			break ;
-	}
-	return (i);
-}
-
-static int		calc_mem_size(const int len, const int front, const int end)
-{
-	int mem_size;
-
-	mem_size = len - (front + end) + 1;
-	if (mem_size > 0)
-		return (mem_size);
-	return (0);
-}
-
 char			*ft_strtrim(char const *s)
 {
 	size_t		len;
