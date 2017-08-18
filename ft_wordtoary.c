@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_create_tab.c                                    :+:      :+:    :+:   */
+/*   ft_wordtoary.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -13,14 +13,14 @@
 #include <stdlib.h>
 #include "libft.h"
 
-char	**ft_create_tab(const char *s, char c, int nb_word, int max_len_word)
+char	**ft_wordtoary(const char *s, char c, int nb_word, int word_len)
 {
-	char	**tab;
+	char	**array;
 	int		i;
 	int		j;
 	int		k;
 
-	if (!(tab = (char **)malloc(sizeof(*tab) * nb_word + 1)))
+	if (!(array = (char **)malloc(sizeof(*array) * nb_word + 1)))
 		return (NULL);
 	i = 0;
 	j = 0;
@@ -31,13 +31,13 @@ char	**ft_create_tab(const char *s, char c, int nb_word, int max_len_word)
 			i++;
 		if (s[i] != c && s[i])
 		{
-			if (!(tab[j] = (char *)malloc(sizeof(**tab) * max_len_word + 1)))
+			if (!(array[j] = (char *)malloc(sizeof(**array) * word_len + 1)))
 				return (NULL);
 			while (s[i] != c && s[i])
-				tab[j][k++] = s[i++];
-			tab[j++][k] = '\0';
+				array[j][k++] = s[i++];
+			array[j++][k] = '\0';
 		}
 	}
-	tab[j] = 0;
-	return (tab);
+	array[j] = 0;
+	return (array);
 }

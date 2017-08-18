@@ -70,7 +70,7 @@ SRCS = ft_atoi.c \
        ft_strtrim.c \
        ft_tolower.c \
        ft_toupper.c \
-       ft_create_tab.c
+       ft_wordtoary.c
 
 DEL = rm -f
 FLAGS = -Wall -Wextra -Werror

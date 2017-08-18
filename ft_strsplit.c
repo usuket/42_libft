@@ -39,5 +39,5 @@ char		**ft_strsplit(const char *s, char c)
 				max_len_word = len_word;
 		}
 	}
-	return (ft_create_tab(s, c, nb_word, max_len_word));
+	return (ft_wordtoary(s, c, nb_word, max_len_word));
 }
