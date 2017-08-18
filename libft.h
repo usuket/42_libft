@@ -80,8 +80,5 @@ void			ft_lstadd(t_list **alst, t_list *new_list);
 void			ft_lstiter(t_list *lst, void(*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-int		ft_is_white_space(char c);
-int		calc_front_trim_size(const char *s, const int len);
-int		calc_end_trim_size(const char *s, const int len);
-int		calc_mem_size(const int len, const int front, const int end);
+char	**ft_create_tab(const char *s, char c, int nb_word, int max_len_word);
 #endif

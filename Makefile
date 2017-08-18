@@ -70,13 +70,11 @@ SRCS = ft_atoi.c \
        ft_strtrim.c \
        ft_tolower.c \
        ft_toupper.c \
-       ft_iswhitespace.c \
-       ft_countrspace.c \
-       ft_countmidllesize.c \
-       ft_countlspace.c
+       ft_create_tab.c
 
 DEL = rm -f
 FLAGS = -Wall -Wextra -Werror
+
 $(NAME):
 	gcc -c $(FLAGS) -I libft.h $(SRCS)
 	ar rcs $(NAME) *.o
