@@ -1,8 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_create_tab.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/08/18 13:58:46 by ysakakib          #+#    #+#             */
+/*   Updated: 2017/08/18 14:00:07 by ysakakib         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include "libft.h"
 
-char	**ft_create_tab(const char *s, char c,
-							   int nb_word, int max_len_word)
+char	**ft_create_tab(const char *s, char c, int nb_word, int max_len_word)
 {
 	char	**tab;
 	int		i;
