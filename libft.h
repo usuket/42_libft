@@ -6,7 +6,7 @@
 /*   By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/05 16:34:51 by ysakakib          #+#    #+#             */
-/*   Updated: 2017/06/06 01:02:04 by ysakakib         ###   ########.fr       */
+/*   Updated: 2017/08/18 14:03:01 by ysakakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,5 +80,5 @@ void			ft_lstadd(t_list **alst, t_list *new_list);
 void			ft_lstiter(t_list *lst, void(*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-char	**ft_create_tab(const char *s, char c, int nb_word, int max_len_word);
+char			**ft_create_tab(const char *s, char c, int nb_wd, int len);
 #endif
