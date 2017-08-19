@@ -6,7 +6,7 @@
 #    By: ysakakib <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/05 18:18:09 by ysakakib          #+#    #+#              #
-#    Updated: 2017/08/18 17:19:53 by ysakakib         ###   ########.fr        #
+#    Updated: 2017/08/18 17:25:52 by ysakakib         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,15 +74,16 @@ SRCS = ft_atoi.c \
 
 DEL = rm -f
 FLAGS = -Wall -Wextra -Werror
+OBJS = $(SRCS:.c=.o)
 
 $(NAME):
 	gcc -c $(FLAGS) $(SRCS)
-	ar rcs $(NAME) *.o
+	ar rcs $(NAME) $(OBJS)
 	ranlib $(NAME)
 all: $(NAME)
 clean:
-	$(DEL) *.o
+	@$(DEL) $(OBJS)
 fclean: clean
-	$(DEL) $(NAME)
+	@$(DEL) $(NAME)
 re: fclean all
 
